@@ -16,7 +16,7 @@
     "url": "https://github.com/epikhighs/buildkit/issues"
   },
   "homepage": "https://github.com/epikhighs/buildkit#readme",
-  "devDependencies": {
+  "dependencies": {
     "webpack": "4.25.1"
   }
 }
