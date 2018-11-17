@@ -1,0 +1,19 @@
+{
+  "name": "buildkit",
+  "version": "0.0.1",
+  "description": "a tool kit for building react apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/epikhighs/buildkit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/epikhighs/buildkit/issues"
+  },
+  "homepage": "https://github.com/epikhighs/buildkit#readme"
+}
