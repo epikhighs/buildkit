@@ -8,10 +8,17 @@
 1. need a node.js script that installs common packages.  Can probably read from a config file that's there per project that provides blacklist/whitelist on which packages it needs.
 
 ## initial project setup
+1. create a repo
+1. `npm init`
+1. `npm i -D  git://github.com/epikhighs/buildkit.git`
 1. npm install packages
 1. copy over base configs (babel/webpack/storybook)
 
 ## packages most react projects will need ##
+- initial scope
+  - webpack
+
+
 - foundational
   - babel
   - cross env
