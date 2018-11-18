@@ -17,6 +17,7 @@ function cmd (cmd = '') {
   let perfName = 'EXEC';
   try {
     logger(`builder.js ${perfName}: ${cmd}`);
+    // try using execSpawn instead
     const buffer = run(() => execSync(cmd), perfName);
     const output = buffer.toString();
 

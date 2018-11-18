@@ -6,17 +6,21 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "buildkit": "./bin/buildkit.js",
+    "publish": "./bin/publish.js"
+  },
+  "dependencies": {
+    "cpy": "7.0.1",
+    "webpack": "4.25.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/epikhighs/buildkit.git"
   },
-  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/epikhighs/buildkit/issues"
   },
-  "homepage": "https://github.com/epikhighs/buildkit#readme",
-  "dependencies": {
-    "webpack": "4.25.1"
-  }
+  "homepage": "https://github.com/epikhighs/buildkit#readme"
 }

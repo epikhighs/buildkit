@@ -4,9 +4,9 @@
  * usage:
  *   node publish major|minor|patch
  */
-const {cmd} = require('./util');
-const {getDurationReport} = require('./util');
-const {run} = require('./util');
+const {cmd} = require('../src/util');
+const {getDurationReport} = require('../src/util');
+const {run} = require('../src/util');
 const logger = console.log;
 
 const version = process.argv[2];
@@ -23,7 +23,6 @@ if (versionType[version] === undefined) {
 
 /* Must have
 1. no local changes (all commits must be made locally)
-2. there must be commits to push to origin (or else why publish no change?)
 */
 const uncommittedChanges = cmd('git status --porcelain');
 
