@@ -1,6 +1,6 @@
 {
   "name": "buildkit",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "a tool kit for building react apps",
   "main": "index.js",
   "scripts": {
