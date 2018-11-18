@@ -4,11 +4,12 @@
   "description": "a tool kit for building react apps",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "node ./.bin/publish.js"
   },
   "bin": {
-    "buildkit": "./bin/buildkit.js",
-    "publish": "./bin/publish.js"
+    "buildkit": "./.bin/buildkit.js",
+    "publish": "./.bin/publish.js"
   },
   "dependencies": {
     "cpy": "7.0.1",
