@@ -21,5 +21,5 @@ const path = require('path');
 
 (async () => {
   await cpy(['../webpack.base.babel.js'], process.cwd());
-  console.log('Files copied!');
+  console.log(`Files copied to ${process.cwd()}`);
 })();
