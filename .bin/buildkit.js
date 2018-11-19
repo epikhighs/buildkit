@@ -5,21 +5,21 @@
  *   node buildkit <task>
  * task: only support usage is 'init' so far
  */
-const {cmd} = require('../src/util');
+const {cmd} = require('../build/util');
 process.exitCode = 0;
 //process.exitCode = 1;
 
-const {getDurationReport} = require('../src/util');
-const {run} = require('../src/util');
+const {getDurationReport} = require('../build/util');
+const {run} = require('../build/util');
 const logger = console.log;
 
 const cpy = require('cpy');
 const path = require('path');
 
 // expects buildkit to be executed from project root
-//path.join();
+const webpackBaseBabel = path.join(process.cwd(), 'node_modules', 'buildkit', 'webpack.base.babel.js');
 
 (async () => {
-  await cpy(['../webpack.base.babel.js'], process.cwd());
+  await cpy([webpackBaseBabel], process.cwd());
   console.log(`Files copied to ${process.cwd()}`);
 })();

@@ -14,7 +14,9 @@
 1. `npm i -D  git://github.com/epikhighs/buildkit.git`
   1. this step auto-installs all package.json `dependencies` from `buildkit`
 1. `npx buildkit init`
-  1. copy over base configs (babel/webpack/storybook)
+  1. copies over base configs (babel/webpack/storybook)
+1. update `package.json`'s npm scripts
+  1. "server": "webpack-dev-server --config ./webpack.base.babel.js",
 
 ## packages most react projects will need ##
 - initial scope

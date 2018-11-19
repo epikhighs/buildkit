@@ -4,9 +4,9 @@
  * usage:
  *   node publish major|minor|patch
  */
-const {cmd} = require('../src/util');
-const {getDurationReport} = require('../src/util');
-const {run} = require('../src/util');
+const {cmd} = require('../build/util');
+const {getDurationReport} = require('../build/util');
+const {run} = require('../build/util');
 const logger = console.log;
 
 const version = process.argv[2];
