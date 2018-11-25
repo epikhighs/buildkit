@@ -1,5 +1,10 @@
 # buildkit
 
+## goals
+1. Centralize the app infrastructure (tooling and libs needed to build and develop an app) such that the consumers of `buildkit` are decoupled from maintaining the infrastructure on a project by project basis
+1. Provide sensible defaults that can be extended
+1. First class support for Webstorm's builtin tools/plugins (e.g. remote debugging, running the tests or apps in Webstorm's runner etc.)
+
 ## conventions
 1. agreed upon directory structure and file naming scheme
   1. project files go into `/src`
@@ -21,7 +26,7 @@
 ## packages most react projects will need ##
 - initial scope
   - webpack
-
+  - babel
 
 - foundational
   - babel
