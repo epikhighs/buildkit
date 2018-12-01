@@ -1,6 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
-
+const path = require('path');
 module.exports = {
   entry: __dirname + "/src/index.js",
   output: {
@@ -10,8 +10,12 @@ module.exports = {
   },
   mode: 'development',
   module: {  // where we defined file patterns and their loaders
-    rules: [
-    ]
+    rules: []
+  },
+  resolve: {
+    alias: {
+      src: path.join(__dirname, 'src'),
+    },
   },
   plugins: [  // Array of plugins to apply to build chunk
     new HtmlWebpackPlugin({

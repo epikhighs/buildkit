@@ -4,6 +4,7 @@
 1. Centralize the app infrastructure (tooling and libs needed to build and develop an app) such that the consumers of `buildkit` are decoupled from maintaining the infrastructure on a project by project basis
 1. Provide sensible defaults that can be extended
 1. First class support for Webstorm's builtin tools/plugins (e.g. remote debugging, running the tests or apps in Webstorm's runner etc.)
+1. "Absolute" import/require paths relative to `/src` directory (e.g. `import foo from 'src/foo`)
 
 ## conventions
 1. agreed upon directory structure and file naming scheme
