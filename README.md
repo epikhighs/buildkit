@@ -6,6 +6,16 @@
 1. First class support for Webstorm's builtin tools/plugins (e.g. remote debugging, running the tests or apps in Webstorm's runner etc.)
 1. "Absolute" import/require paths relative to `/src` directory (e.g. `import foo from 'src/foo`)
 
+## usage
+
+Haven't published to NPM yet, but for now can experiment by installing via git url.
+
+```
+  "devDependencies": {
+    "buildkit": "git://github.com/epikhighs/buildkit.git"
+  }
+```
+
 ## conventions
 1. agreed upon directory structure and file naming scheme
   1. project files go into `/src`
