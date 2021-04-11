@@ -1,10 +1,22 @@
 # buildkit
 
 ## goals
-1. Centralize the app infrastructure (tooling and libs needed to build and develop an app) such that the consumers of `buildkit` are decoupled from maintaining the infrastructure on a project by project basis
+
+1. Provide just enough infrastructure (e.g. sugar and glue) on top of existing open-source tools to develop applications in a "logical" monorepo for web and node.js projects. 
+    1. A logical monorepo contains projects (which are further categorized as `apps` or `libs`) that either share dependencies or can stand to benefit from the monorepo's shared tooling.  The idea is that not all projects need to be contained in a logical monorepo, but rather a grouping of projects that make sense to be colocated. 
+    1. `apps` may contain application code specific to the app and/or are composed of (dependent on) `libs`.  
+    1. `libs` are standalone projects that aren't executable.  They are meant to expose APIs that are consumed either by other `libs` or `apps`.
+    1. Within a logical monorepo, all projects share the same version of npm packages.  So there is no intentional support for multiple versions of a package. 
+1. Boilerplate generators for projects
+1. Unified task runner to run tasks for all projects, individual projects, or affected projects
+    1. Affected projects contain modified files (from a git standpoint) that require certain tasks to be reran (e.g. lint/tests) 
 1. Provide sensible defaults that can be extended
 1. First class support for Webstorm's builtin tools/plugins (e.g. remote debugging, running the tests or apps in Webstorm's runner etc.)
-1. "Absolute" import/require paths relative to `/src` directory (e.g. `import foo from 'src/foo`)
+1. "Absolute" path resolution so that relative imports needn't be used 
+
+### unknowns
+
+1. How much to assist in tooling upgrades.  Support for automated/assisted upgrades for tooling configs (e.g. webpack/babel).  I think by design most tooling configs will be pointing to a shared global config so manual upgrades should not be too taxing (when compared to having to upgrade every config for every project).
 
 ## usage
 
