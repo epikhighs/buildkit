@@ -1,0 +1,17 @@
+{
+  "name": "sbx",
+  "version": "0.0.1",
+  "description": "sandbox monorepo",
+  "scripts": {
+    "lint": "eslint -c ./config/.eslintrc.js ./app ./lib",
+    "lint:format": "eslint -c ./config/style.eslintrc.js ./app ./lib --fix"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "4.22.0",
+    "@typescript-eslint/parser": "4.22.0",
+    "eslint": "7.24.0",
+    "eslint-plugin-react": "7.23.2",
+    "typescript": "4.2.4"
+  }
+}

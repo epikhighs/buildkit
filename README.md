@@ -18,6 +18,20 @@
 
 1. How much to assist in tooling upgrades.  Support for automated/assisted upgrades for tooling configs (e.g. webpack/babel).  I think by design most tooling configs will be pointing to a shared global config so manual upgrades should not be too taxing (when compared to having to upgrade every config for every project).
 
+# sbx
+
+steps to recreate sbx
+
+1. switch to `/sbx` and run `npm i -D eslint eslint-plugin-react @typescript-eslint/eslint-plugin typescript @typescript-eslint/parser`
+1. run `npx eslint --init`
+1. copy the `.eslintrc.js` into `sbx/config`
+1. can run lint with `npx eslint -c ./config/.eslintrc.js ./app ./lib`
+    1. note that even though `node_modules` is part of the ignore patterns, eslint still walks the directory structure (you can see this w/ using the `--debug` flag).  So it's just better to specify the directories to lint.
+    
+# future considerations
+1. https://github.com/pahen/madge
+
+----------------------------------------------------------
 ## usage
 
 Haven't published to NPM yet, but for now can experiment by installing via git url.
